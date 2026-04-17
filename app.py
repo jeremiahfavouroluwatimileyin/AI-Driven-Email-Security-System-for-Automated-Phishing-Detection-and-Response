@@ -1,6 +1,7 @@
 # PAPI - Professional AI-Powered Intelligence
 # Main application entry point
 
+import os
 import json
 import streamlit as st
 
@@ -197,12 +198,17 @@ def render_gmail_connect():
     st.markdown("### 🔗 Connect Gmail Account")
     st.info(f"Connect **{config.USER_EMAIL}** to fetch live emails.")
 
-    import os
-    if not os.path.exists("client_secret.json"):
+    # Check for credentials: either the secrets dict or the local file will do
+    has_secrets = "google_oauth" in st.secrets
+    has_local_file = os.path.exists("client_secret.json")
+
+    if not has_secrets and not has_local_file:
         st.error(
-            "No `client_secret.json` found. "
-            "Download your OAuth credentials from Google Cloud Console and place them in the project root."
+            "Google OAuth credentials not found. "
+            "Add a `[google_oauth]` section to your Streamlit secrets, "
+            "or place `client_secret.json` in the project root for local development."
         )
+        st.markdown("[How to set up Streamlit secrets →](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/secrets-management)")
         st.markdown("[Google Cloud Console →](https://console.cloud.google.com/)")
         return
 
