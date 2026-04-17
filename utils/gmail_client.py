@@ -2,27 +2,47 @@
 # Fetches emails from the connected Gmail account
 
 import base64
-import os
 import json
+import streamlit as st
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import Flow
 from googleapiclient.discovery import build
 import config
 
-
-# Path to your OAuth client_secret.json downloaded from Google Cloud Console
 CLIENT_SECRET_FILE = "client_secret.json"
+
+def _get_client_config() -> dict:
+    # Build the client config dict from st.secrets if available,
+    # otherwise fall back to the local client_secret.json file
+    try:
+        oauth = st.secrets["google_oauth"]
+        return {
+            "installed": {
+                "client_id": oauth["client_id"],
+                "project_id": oauth["project_id"],
+                "auth_uri": oauth["auth_uri"],
+                "token_uri": oauth["token_uri"],
+                "auth_provider_x509_cert_url": oauth["auth_provider_x509_cert_url"],
+                "client_secret": oauth["client_secret"],
+                "redirect_uris": list(oauth["redirect_uris"]),
+            }
+        }
+    except Exception:
+        # Running locally with the file present
+        with open(CLIENT_SECRET_FILE) as f:
+            return json.load(f)
 
 
 def get_auth_url() -> tuple:
-    # Create the flow without PKCE
-    flow = Flow.from_client_secrets_file(
-        CLIENT_SECRET_FILE,
+    client_config = _get_client_config()
+
+    # Create flow from dict instead of from file
+    flow = Flow.from_client_config(
+        client_config,
         scopes=config.GMAIL_SCOPES,
         redirect_uri="urn:ietf:wg:oauth:2.0:oob",
     )
 
-    # Don't pass code_challenge_method at all — omitting it disables PKCE entirely
     auth_url, _ = flow.authorization_url(
         prompt="consent",
         access_type="offline",
