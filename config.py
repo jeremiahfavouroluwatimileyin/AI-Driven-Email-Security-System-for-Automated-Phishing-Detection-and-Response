@@ -1,12 +1,16 @@
 # Central configuration file for Wizard
 
 import os
-from dotenv import load_dotenv
+import streamlit as st
 
-# Load .env file when running locally
-load_dotenv()
+# Try st.secrets first (Streamlit Cloud), fall back to env var for other environments
+def get_secret(key: str) -> str:
+    try:
+        return st.secrets[key]
+    except Exception:
+        return os.environ.get(key, "")
 
-OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
+OPENAI_API_KEY = get_secret("OPENAI_API_KEY")
 OPENAI_MODEL = "gpt-4.1-mini"
 
 # Company info used in delegations and responses
