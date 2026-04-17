@@ -1,0 +1,74 @@
+[
+  {
+    "id": "demo_001",
+    "from_name": "LinkedIn",
+    "from_email": "notifications@linkedin.com",
+    "subject": "You have 3 new connection requests",
+    "body": "Hi Jeremiah,\n\nYou have 3 new connection requests waiting for you on LinkedIn.\n\n1. Adaeze Okonkwo - Senior Data Scientist at MTN Nigeria\n2. David Mensah - Software Engineer at Flutterwave\n3. Priya Sharma - Product Manager at Microsoft\n\nAccept these connections to grow your professional network. Your profile has also been viewed 47 times this week.\n\nBest,\nThe LinkedIn Team",
+    "date": "2025-04-15T09:23:00Z",
+    "expected_class": "routine"
+  },
+  {
+    "id": "demo_002",
+    "from_name": "Dr. Emeka Nwosu",
+    "from_email": "e.nwosu@unilag.edu.ng",
+    "subject": "MSc Dissertation Supervision Meeting - Urgent",
+    "body": "Dear Jeremiah,\n\nI hope this message finds you well. I need to schedule an urgent meeting regarding your MSc dissertation submission. There are a few critical points we must address before the final deadline on April 30th.\n\nPlease confirm your availability for any of the following slots:\n- Monday April 21, 2:00 PM - 4:00 PM\n- Tuesday April 22, 10:00 AM - 12:00 PM\n- Wednesday April 23, 3:00 PM - 5:00 PM\n\nThis meeting is mandatory. Please treat this with urgency.\n\nBest regards,\nDr. Emeka Nwosu\nDepartment of Computer Science",
+    "date": "2025-04-15T11:45:00Z",
+    "expected_class": "critical"
+  },
+  {
+    "id": "demo_003",
+    "from_name": "ZENITH BANK ALERT",
+    "from_email": "alert-noreply@zenith-bank-secure.net",
+    "subject": "URGENT: Your Account Has Been Suspended - Verify Now",
+    "body": "Dear Valued Customer,\n\nYour Zenith Bank account has been temporarily SUSPENDED due to suspicious activity detected on your profile.\n\nTo restore access, you must verify your details IMMEDIATELY by clicking the link below:\n\nhttp://zenith-verify-account.ru/login?token=8f3kL9\n\nYou must complete this within 24 HOURS or your account will be PERMANENTLY CLOSED.\n\nProvide:\n- Full name\n- Account number\n- ATM PIN\n- Date of birth\n- BVN\n\nZenith Bank Security Team\n+234-800-FAKE-NUM",
+    "date": "2025-04-15T13:10:00Z",
+    "expected_class": "phishing"
+  },
+  {
+    "id": "demo_004",
+    "from_name": "Coursera",
+    "from_email": "no-reply@coursera.org",
+    "subject": "Complete your certificate: 3 days left on your trial",
+    "body": "Hi Jeremiah,\n\nYour Coursera Plus trial ends in 3 days. Don't let your progress go to waste!\n\nYou're 78% through the IBM Data Science Professional Certificate. Finish strong.\n\nUpgrade now and get:\n- Unlimited access to 7,000+ courses\n- Shareable certificates for your LinkedIn profile\n- Job-ready skills from top companies\n\nUse code LEARN2025 for 20% off your first month.\n\nKeep learning,\nThe Coursera Team",
+    "date": "2025-04-15T14:30:00Z",
+    "expected_class": "routine"
+  },
+  {
+    "id": "demo_005",
+    "from_name": "Taiwo Adebayo",
+    "from_email": "t.adebayo@hrtech-solutions.com",
+    "subject": "Re: Employment Contract Amendment - Immediate Action Required",
+    "body": "Dear Jeremiah,\n\nFollowing our board meeting yesterday, we have decided to amend the terms of your employment contract effective May 1st, 2025.\n\nKey changes include:\n1. Remote work policy revised to 2 days per week in-office\n2. Annual performance bonus structure modified\n3. Confidentiality clause updated\n\nYou are required to review, sign, and return the amended contract no later than April 25th. Failure to do so may affect your employment status.\n\nThe contract document is attached. Please escalate any concerns to HR immediately.\n\nRegards,\nTaiwo Adebayo\nChief Operations Officer\nTech Solutions",
+    "date": "2025-04-15T16:00:00Z",
+    "expected_class": "critical"
+  },
+  {
+    "id": "demo_006",
+    "from_name": "GitHub",
+    "from_email": "noreply@github.com",
+    "subject": "[GitHub] A new public key was added to your account",
+    "body": "Hey jeremiahfavour,\n\nA new public key was added to your GitHub account.\n\nIf you believe this is a mistake, please contact GitHub Support immediately at https://support.github.com.\n\nThanks,\nThe GitHub Team",
+    "date": "2025-04-15T17:20:00Z",
+    "expected_class": "routine"
+  },
+  {
+    "id": "demo_007",
+    "from_name": "Prince Babatunde Williams",
+    "from_email": "prince.btwilliams2024@protonmail.com",
+    "subject": "Confidential Business Proposal - $4.5 Million USD",
+    "body": "DEAR FRIEND,\n\nI am Prince Babatunde Williams, son of the late Chief Emmanuel Williams, former oil minister of Nigeria. I am contacting you with a STRICTLY CONFIDENTIAL business proposal.\n\nI have inherited $4,500,000 USD that I need to transfer out of the country. I require a trusted foreign partner to receive this fund in their account. You will receive 35% ($1,575,000) as your share.\n\nThis transaction is 100% RISK FREE and LEGAL. All I need is your:\n- Full name\n- Bank account number\n- Passport copy\n- Phone number\n\nReply urgently to proceed. God bless you.\n\nPrince Babatunde Williams",
+    "date": "2025-04-15T08:05:00Z",
+    "expected_class": "phishing"
+  },
+  {
+    "id": "demo_008",
+    "from_name": "Notion",
+    "from_email": "team@makenotion.com",
+    "subject": "Your weekly digest is ready",
+    "body": "Hi Jeremiah,\n\nHere's what happened in your workspace this week:\n\n📄 5 pages updated\n✅ 12 tasks completed\n💬 3 new comments on 'Wizard Project Documentation'\n\nTop activity: Wizard Project Documentation had the most updates this week.\n\nOpen your workspace to continue where you left off.\n\nThe Notion Team",
+    "date": "2025-04-14T08:00:00Z",
+    "expected_class": "routine"
+  }
+]
