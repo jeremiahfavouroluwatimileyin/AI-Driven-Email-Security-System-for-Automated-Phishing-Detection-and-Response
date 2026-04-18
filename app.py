@@ -1,4 +1,4 @@
-# PAPI - Professional AI-Powered Intelligence
+# Wizard - Professional AI-Powered Intelligence
 # Main application entry point
 
 import os
@@ -7,7 +7,7 @@ import streamlit as st
 
 # Page config must be first Streamlit call
 st.set_page_config(
-    page_title="PAPI - Email Security",
+    page_title="Wizard - Email Security",
     page_icon="🛡️",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -140,7 +140,7 @@ def render_inbox(emails: list):
                 st.markdown("---")
 
                 if st.button(
-                    "🚀 Run PAPI Analysis",
+                    "🚀 Run Wizard Analysis",
                     type="primary",
                     use_container_width=True,
                     key=f"run_analysis_{email['id']}",
