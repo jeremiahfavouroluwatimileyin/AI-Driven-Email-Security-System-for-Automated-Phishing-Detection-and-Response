@@ -38,7 +38,7 @@ def render_inbox_header():
     """
     st.markdown("""
     <div style='text-align: center; padding: 18px 0 24px 0;'>
-        <h1 style='color: #E0E0E0; font-size: 1.8rem; margin: 0;'>🛡️ PAPI Inbox</h1>
+        <h1 style='color: #E0E0E0; font-size: 1.8rem; margin: 0;'>🛡️ Wizard Inbox</h1>
         <p style='color: #888; font-size: 0.82rem; margin: 4px 0 0 0;'>
             AI-powered email intelligence
         </p>
